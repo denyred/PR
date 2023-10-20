@@ -12,7 +12,7 @@ CLIENT_DIR = os.path.join('Downloads', client_id)
 os.makedirs(CLIENT_DIR, exist_ok=True)
 
 
-def receive_messages():
+def receive_messages(client_socket=None):
     file_name = None
     is_file = False
     while True:
